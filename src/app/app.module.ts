@@ -7,13 +7,23 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 import { FournisseuerComponent } from './fournisseuer/fournisseuer.component';
 import { ListFournisseursComponent } from './list-fournisseurs/list-fournisseurs.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { UsersComponent } from './users/users.component';
+import { UserslistComponent } from './userslist/userslist.component';
+import { MyDirectiveDirective } from './directives/my-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     FournisseuerComponent,
-    ListFournisseursComponent
+    ListFournisseursComponent,
+    NavbarComponent,
+    HeaderComponent,
+    UsersComponent,
+    UserslistComponent,
+    MyDirectiveDirective
   ],
   imports: [
     BrowserModule,
