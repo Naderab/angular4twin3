@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { UsersComponent } from './users/users.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { MyDirectiveDirective } from './directives/my-directive.directive';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MyDirectiveDirective } from './directives/my-directive.directive';
     HeaderComponent,
     UsersComponent,
     UserslistComponent,
-    MyDirectiveDirective
+    MyDirectiveDirective,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
