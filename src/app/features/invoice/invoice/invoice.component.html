@@ -1,0 +1,12 @@
+<div *ngIf="status">
+ <p>{{invoice.idFacture}}</p>
+<p>{{invoice.montantFacture}}</p>
+<p>{{invoice.dateFacture}}</p>
+<p>{{invoice.montantRemise}}</p>
+</div>
+<div *ngIf="!status">
+    <p>Impossible de visualiser les détails
+    de la facture .</p>
+</div>
+
+<button (click)="toList()">Vers la liste </button>

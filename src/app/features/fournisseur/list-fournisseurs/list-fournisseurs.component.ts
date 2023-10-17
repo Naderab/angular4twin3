@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fournisseuer } from '../models/fournisseurs';
+import { Fournisseuer } from '../../../models/fournisseurs';
 
 @Component({
   selector: 'app-list-fournisseurs',
@@ -13,7 +13,7 @@ export class ListFournisseursComponent {
     { idFournisseur: 3, code: '3ABC4522', libelle: 'lenovo' },
     { idFournisseur: 400, code: '40ABC452', libelle: 'asus' },
   ];
-  delete(id:number) {
-    this.list = this.list.filter(e => e.idFournisseur != id);
+  delete(id: number) {
+    this.list = this.list.filter((e) => e.idFournisseur != id);
   }
 }

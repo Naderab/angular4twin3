@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from '../core/user';
+import { User } from '../../../core/user';
 
 @Component({
   selector: 'app-userslist',
@@ -71,6 +71,10 @@ export class UserslistComponent {
   }
 
   searchUser() {
-    this.searchtext != '' ? this.listusers = this.listusers.filter((u)=>u.accountCategory == this.searchtext) : this.listusers = this.listusers;
+    this.searchtext != ''
+      ? (this.listusers = this.listusers.filter(
+          (u) => u.accountCategory == this.searchtext
+        ))
+      : (this.listusers = this.listusers);
   }
 }

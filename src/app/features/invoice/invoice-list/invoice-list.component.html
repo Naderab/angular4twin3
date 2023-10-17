@@ -1,0 +1,4 @@
+<ul>
+   <!-- <li *ngFor="let i of list">Facture : {{i.idFacture}} <a [routerLink]="['/invoice/',i.idFacture,i.active]">Details</a></li>-->
+</ul><li *ngFor="let i of list">Facture : {{i.idFacture}} <a [routerLink]="['/invoice/']" [queryParams]="{id:i.idFacture,status:i.active}">Details</a>
+</li>
