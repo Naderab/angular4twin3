@@ -11,13 +11,16 @@
                     <a class="nav-link" aria-current="page" routerLink="/home" [routerLinkActive]="['active']">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/users" [routerLinkActive]="['active']">Users</a>
+                    <a class="nav-link" routerLink="/user/users" [routerLinkActive]="['active']">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/listUsers" [routerLinkActive]="['active']">Users list</a>
+                    <a class="nav-link" routerLink="/user/listUsers" [routerLinkActive]="['active']">Users list</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/invoice" [routerLinkActive]="['active']">Invoices Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/fournisseur/list" [routerLinkActive]="['active']">Fournisseur list</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/fournisseur',idFournisseur]" [routerLinkActive]="['active']">Fournisseur</a>

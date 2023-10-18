@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestService } from 'src/app/services/test.service';
 
 @Component({
   selector: 'app-users',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class UsersComponent {
 
+  constructor(private _test: TestService) { }
+  
+  addToList() {
+    this._test.addToList('c');
+  }
 }

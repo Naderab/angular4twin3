@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Fournisseuer } from '../../../models/fournisseurs';
+import { TestService } from 'src/app/services/test.service';
 
 @Component({
   selector: 'app-list-fournisseurs',
@@ -7,6 +8,12 @@ import { Fournisseuer } from '../../../models/fournisseurs';
   styleUrls: ['./list-fournisseurs.component.css'],
 })
 export class ListFournisseursComponent {
+  listtest:string[] = [];
+  constructor(private _test: TestService) {
+    this.listtest = this._test.getList();
+    console.log(this.listtest)
+  }
+  
   list: Fournisseuer[] = [
     { idFournisseur: 1, code: '1ABC4522', libelle: 'hp' },
     { idFournisseur: 2, code: '2ABC4522', libelle: 'dell' },
