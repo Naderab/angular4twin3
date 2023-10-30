@@ -8,10 +8,12 @@ import { TestService } from 'src/app/services/test.service';
   styleUrls: ['./list-fournisseurs.component.css'],
 })
 export class ListFournisseursComponent {
-  listtest:string[] = [];
+  listtest: string[] = [];
+  error: string = '';
   constructor(private _test: TestService) {
     this.listtest = this._test.getList();
     console.log(this.listtest)
+   
   }
   
   list: Fournisseuer[] = [

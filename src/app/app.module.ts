@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { InvoiceModule } from './features/invoice/invoice.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,8 @@ import { InvoiceModule } from './features/invoice/invoice.module';
     HeaderComponent,
     NotfoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -16,6 +16,6 @@ import { TestService } from 'src/app/services/test.service';
     CommonModule,
     FournisseurRoutingModule
   ],
-  providers:[TestService]
+  providers:[]
 })
 export class FournisseurModule { }

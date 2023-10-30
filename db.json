@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Mila",
+      "lastName": "Kunis",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "mila@kunis.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    }
+  ]
+}

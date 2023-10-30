@@ -5,7 +5,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { UsersComponent } from './users/users.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [UsersComponent, UserslistComponent],
