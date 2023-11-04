@@ -10,6 +10,18 @@
       "password": "test",
       "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
       "profession": "Software Engineer"
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "test",
+      "firstName": "test",
+      "lastName": "test",
+      "birthDate": "2023-10-27",
+      "profession": "test",
+      "accountCategory": "Customer",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+
+      "id": 2
     }
   ]
 }

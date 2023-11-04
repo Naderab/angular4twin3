@@ -1,0 +1,44 @@
+<form #f="ngForm" (ngSubmit)="add(f)">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="text" class="form-control" required minlength="3" name="firstName" [(ngModel)]="user.firstName" #firstName="ngModel" placeholder="Jhon">
+   <div class="alert alert-danger" *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)">
+          <div *ngIf="firstName.errors!['required']">  FirstName is required !</div>
+          <div *ngIf="firstName.errors!['minlength']">  FirstName must be at least 3 characters !</div>
+   </div>
+   Touched : {{firstName.touched}}<br>
+   Untouched : {{firstName.untouched}}<br>
+   Pristine : {{firstName.pristine}}<br>
+   Dirty : {{firstName.dirty}}<br>
+   Valid : {{firstName.valid}}<br>
+   Invalid : {{firstName.invalid}}<br>
+   Errors : {{firstName.errors|json}}
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="user.lastName" name="lastName" placeholder="Doe">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Birth Date</label>
+        <input type="date" class="form-control" [(ngModel)]="user.birthDate" name="birthDate" >
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="user.email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="user.password" >
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1"  class="form-label">Profession</label>
+        <input type="text" class="form-control" name="profession" [(ngModel)]="user.profession" >
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Customer Category</label>
+        <input type="text" class="form-control" name="category" value="Customer" readonly>
+    </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="Add" [disabled]="f.invalid">
+    </div>
+</form>
