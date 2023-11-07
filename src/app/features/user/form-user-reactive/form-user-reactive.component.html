@@ -1,0 +1,27 @@
+<input type="text" [formControl]="username">
+{{username.value}}
+{{username.touched}}
+{{username | json}}
+<button (click)="testAdd()">Add</button>
+
+<form [formGroup]="userForm">
+<input type="text" formControlName="firstName"><br>
+<input type="text" formControlName="lastName"><br>
+<div *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)">
+ <div *ngIf="lastName.errors!['required']">Last Name is required</div>
+</div>
+<input type="email" formControlName="email"><br>
+<input type="password" formControlName="password"><br>
+<input type="date" formControlName="birthDate"><br>
+<div formGroupName="address">
+<input type="text" formControlName="city"><br>
+<input type="text" formControlName="street"><br>
+</div>
+<div formArrayName="competences">
+    <button (click)="addCompetence()">+</button>
+    <div *ngFor="let c of competences.controls;let index">
+            <input type="text" [formControl]="index">
+    </div>
+</div>
+
+</form>
