@@ -1,3 +1,5 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -37,18 +39,13 @@
                 </td>
                 <td style="width: 20%;">
                   <button class="btn btn-danger" [disabled]="user.accountCategory == 'Admin'" (click)="deleteUser(user.id)">Delete</button>
-                  <a href="#" class="table-link">
+                  <a [routerLink]="['/user/update',user.id]" class="table-link">
                     <span class="fa-stack">
                       <i class="fa fa-square fa-stack-2x"></i>
                       <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
                     </span>
                   </a>
-                  <a href="#" class="table-link danger">
-                    <span class="fa-stack">
-                      <i class="fa fa-square fa-stack-2x"></i>
-                      <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </a>
+                  
                 </td>
               </tr>
             </tbody>

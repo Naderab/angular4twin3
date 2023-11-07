@@ -14,14 +14,23 @@
     {
       "email": "test@gmail.com",
       "password": "test",
-      "firstName": "test",
+      "firstName": "testzz",
       "lastName": "test",
       "birthDate": "2023-10-27",
-      "profession": "test",
+      "profession": "testxxxx",
       "accountCategory": "Customer",
       "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-
       "id": 2
+    },
+    {
+      "email": "ahmed@gmail.com",
+      "password": "test",
+      "firstName": "aaa",
+      "lastName": "bbb",
+      "birthDate": "2023-11-07",
+      "profession": "www",
+      "accountCategory": "Customer",
+      "id": 3
     }
   ]
 }

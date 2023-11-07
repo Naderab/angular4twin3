@@ -82,6 +82,10 @@ export class UserService {
   fetchAllUsers() {
     return this._http.get(this.apiUrl);
   }
+
+  fetchUserById(id: number) {
+    return this._http.get<User>(this.apiUrl + id);
+  }
   addUser(body: User) {
     return this._http.post(this.apiUrl, body);
   }

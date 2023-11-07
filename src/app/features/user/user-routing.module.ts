@@ -7,8 +7,8 @@ import { FormUserComponent } from './form-user/form-user.component';
 const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'listUsers', component: UserslistComponent },
-  { path: 'add', component: FormUserComponent }
-  
+  { path: 'add', component: FormUserComponent },
+  { path: 'update/:id', component: FormUserComponent }
 ];
 
 @NgModule({

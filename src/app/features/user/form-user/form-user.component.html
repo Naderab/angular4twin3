@@ -6,13 +6,13 @@
           <div *ngIf="firstName.errors!['required']">  FirstName is required !</div>
           <div *ngIf="firstName.errors!['minlength']">  FirstName must be at least 3 characters !</div>
    </div>
-   Touched : {{firstName.touched}}<br>
+  <!-- Touched : {{firstName.touched}}<br>
    Untouched : {{firstName.untouched}}<br>
    Pristine : {{firstName.pristine}}<br>
    Dirty : {{firstName.dirty}}<br>
    Valid : {{firstName.valid}}<br>
    Invalid : {{firstName.invalid}}<br>
-   Errors : {{firstName.errors|json}}
+   Errors : {{firstName.errors|json}}-->
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Last Name</label>
@@ -39,6 +39,6 @@
         <input type="text" class="form-control" name="category" value="Customer" readonly>
     </div>
     <div class="mb-3">
-        <input type="submit" class="btn btn-primary" value="Add" [disabled]="f.invalid">
+        <input type="submit" class="btn btn-primary" [value]="id !== undefined ? 'Update' : 'Add'" [disabled]="f.invalid">
     </div>
 </form>
