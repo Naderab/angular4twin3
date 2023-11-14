@@ -30,7 +30,48 @@
       "birthDate": "2023-11-07",
       "profession": "www",
       "accountCategory": "Customer",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
       "id": 3
+    },
+    {
+      "firstName": "jhon",
+      "lastName": "Doeee",
+      "email": "jhon.doe@gmail.com",
+      "birthDate": "2023-11-02",
+      "password": "Azerty123",
+      "profession": "player",
+      "accountCategory": "Customer",
+      "id": 4
+    },
+    {
+      "firstName": "jhon",
+      "lastName": "Doeee",
+      "email": "jhon.doe@gmail.com",
+      "birthDate": "2023-11-02",
+      "password": "Azerty123",
+      "profession": "player",
+      "accountCategory": "Customer",
+      "id": 5
+    },
+    {
+      "firstName": "jhonnn",
+      "lastName": "Doeee",
+      "email": "jhon.doe@gmail.com",
+      "birthDate": "2023-11-02",
+      "password": "Azerty123",
+      "profession": "player",
+      "accountCategory": "Customer",
+      "id": 6
+    },
+    {
+      "firstName": "Naderrr",
+      "lastName": "Abdellaoui",
+      "email": "nader@gmail.com",
+      "birthDate": "2023-11-10",
+      "password": "naderA122",
+      "profession": "test",
+      "accountCategory": "Customer",
+      "id": 7
     }
   ]
 }

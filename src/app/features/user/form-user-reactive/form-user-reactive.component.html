@@ -1,4 +1,4 @@
-<input type="text" [formControl]="username">
+<!--<input type="text" [formControl]="username">
 {{username.value}}
 {{username.touched}}
 {{username | json}}
@@ -24,4 +24,67 @@
     </div>
 </div>
 
+</form>-->
+<form [formGroup]="fbUser" (ngSubmit)="addUser()">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="text" class="form-control" formControlName="firstName">
+        <div class="alert alert-danger" *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)">
+            <div *ngIf="firstName.errors!['required']"> FirstName is required !</div>
+            <div *ngIf="firstName.errors!['minlength']"> FirstName must be at least 3 characters !</div>
+        </div>
+        <!-- Touched : {{firstName.touched}}<br>
+   Untouched : {{firstName.untouched}}<br>
+   Pristine : {{firstName.pristine}}<br>
+   Dirty : {{firstName.dirty}}<br>
+   Valid : {{firstName.valid}}<br>
+   Invalid : {{firstName.invalid}}<br>
+   Errors : {{firstName.errors|json}}-->
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+        <input type="text" class="form-control" formControlName="lastName">
+        <div class="alert alert-danger" *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)">
+            <div *ngIf="lastName.errors!['required']"> lastName is required !</div>
+            <div *ngIf="lastName.errors!['minlength']"> lastName must be at least 3 characters !</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Birth Date</label>
+        <input type="date" class="form-control" formControlName="birthDate">
+        <div class="alert alert-danger" *ngIf="birthDate.invalid && (birthDate.touched || birthDate.dirty)">
+            <div *ngIf="birthDate.errors!['required']"> birthDate is required !</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email">
+    <div class="alert alert-danger" *ngIf="email.invalid && (email.touched || email.dirty)">
+        <div *ngIf="email.errors!['required']"> email is required !</div>
+        <div *ngIf="email.errors!['pattern']"> email invalid !</div>
+    </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+        <div class="alert alert-danger" *ngIf="password.invalid && (password.touched || password.dirty)">
+            <div *ngIf="password.errors!['required']"> password is required !</div>
+            <div *ngIf="password.errors!['pattern']"> password invalid !</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Profession</label>
+        <input type="text" class="form-control" formControlName="profession">
+        <div class="alert alert-danger" *ngIf="profession.invalid && (profession.touched || profession.dirty)">
+            <div *ngIf="profession.errors!['required']"> profession is required !</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Customer Category</label>
+        <input type="text" class="form-control" formControlName="accountCategory">
+    </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-primary" 
+            [disabled]="fbUser.invalid">
+    </div>
 </form>

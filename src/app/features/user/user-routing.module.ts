@@ -10,7 +10,9 @@ const routes: Routes = [
   { path: 'listUsers', component: UserslistComponent },
   { path: 'add', component: FormUserComponent },
   { path: 'update/:id', component: FormUserComponent },
-  { path: 'addReactive', component: FormUserReactiveComponent }
+  { path: 'addReactive', component: FormUserReactiveComponent },
+  { path: 'updateReactive/:id', component: FormUserReactiveComponent }
+
 
 ];
 
