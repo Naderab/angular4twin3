@@ -38,15 +38,20 @@
                   <a href="#">{{user.email}}</a>
                 </td>
                 <td style="width: 20%;">
-                  <button class="btn btn-danger" [disabled]="user.accountCategory == 'Admin'" (click)="deleteUser(user.id)">Delete</button>
+                 
                   <a [routerLink]="['/user/update',user.id]" class="table-link">
-                    <span class="fa-stack">
-                      <i class="fa fa-square fa-stack-2x"></i>
-                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                    </span>
+                      <span class="fa-stack">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                      </span>
                   </a>
-                  
-                </td>
+                  <a (click)="deleteUser(user.id)" class="table-link danger" [class]="user.accountCategory === 'Admin' ? 'disabled' : 'none'">
+                      <span class="fa-stack">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </td>
               </tr>
             </tbody>
           </table>

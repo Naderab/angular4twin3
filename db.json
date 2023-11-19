@@ -1,15 +1,15 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "Mila",
-      "lastName": "Kunis",
-      "birthDate": "1999-06-30",
-      "accountCategory": "Admin",
-      "email": "mila@kunis.com",
+      "email": "test@gmail.com",
       "password": "test",
+      "firstName": "Milla",
+      "lastName": "Milaa",
+      "birthDate": "2023-10-27",
+      "profession": "testxxxx",
+      "accountCategory": "Admin",
       "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-      "profession": "Software Engineer"
+      "id": 1
     },
     {
       "email": "test@gmail.com",
@@ -21,57 +21,6 @@
       "accountCategory": "Customer",
       "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
       "id": 2
-    },
-    {
-      "email": "ahmed@gmail.com",
-      "password": "test",
-      "firstName": "aaa",
-      "lastName": "bbb",
-      "birthDate": "2023-11-07",
-      "profession": "www",
-      "accountCategory": "Customer",
-      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-      "id": 3
-    },
-    {
-      "firstName": "jhon",
-      "lastName": "Doeee",
-      "email": "jhon.doe@gmail.com",
-      "birthDate": "2023-11-02",
-      "password": "Azerty123",
-      "profession": "player",
-      "accountCategory": "Customer",
-      "id": 4
-    },
-    {
-      "firstName": "jhon",
-      "lastName": "Doeee",
-      "email": "jhon.doe@gmail.com",
-      "birthDate": "2023-11-02",
-      "password": "Azerty123",
-      "profession": "player",
-      "accountCategory": "Customer",
-      "id": 5
-    },
-    {
-      "firstName": "jhonnn",
-      "lastName": "Doeee",
-      "email": "jhon.doe@gmail.com",
-      "birthDate": "2023-11-02",
-      "password": "Azerty123",
-      "profession": "player",
-      "accountCategory": "Customer",
-      "id": 6
-    },
-    {
-      "firstName": "Naderrr",
-      "lastName": "Abdellaoui",
-      "email": "nader@gmail.com",
-      "birthDate": "2023-11-10",
-      "password": "naderA122",
-      "profession": "test",
-      "accountCategory": "Customer",
-      "id": 7
     }
   ]
 }

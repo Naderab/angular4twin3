@@ -30,11 +30,12 @@ export class FormUserComponent implements OnInit {
       console.log(this.user);
       this.user.accountCategory = 'Customer';
       this.userService.addUser(this.user).subscribe({
-        next: () => this.router.navigate(['user/listUsers']),
+        next: () => this.router.navigate(['user']),
       });
     } else {
+      this.user.picture = `https://bootdey.com/img/Content/avatar/avatar${Math.floor(Math.random() * (7 - 1 + 1) + 1)}.png`;
       this.userService.updateUser(this.id, this.user).subscribe({
-        next: () => this.router.navigate(['user/listUsers']),
+        next: () => this.router.navigate(['user']),
       });
     }
   }

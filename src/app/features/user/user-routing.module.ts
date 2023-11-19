@@ -6,8 +6,7 @@ import { FormUserComponent } from './form-user/form-user.component';
 import { FormUserReactiveComponent } from './form-user-reactive/form-user-reactive.component';
 
 const routes: Routes = [
-  { path: 'users', component: UsersComponent },
-  { path: 'listUsers', component: UserslistComponent },
+  { path: '', component: UserslistComponent },
   { path: 'add', component: FormUserComponent },
   { path: 'update/:id', component: FormUserComponent },
   { path: 'addReactive', component: FormUserReactiveComponent },

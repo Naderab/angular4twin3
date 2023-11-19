@@ -204,3 +204,7 @@
 .table-stats .table-line-plus .status-social-icon {
     color: #a75d54;
 }
+.disabled {
+    pointer-events: none;
+    cursor: default;
+  }

@@ -120,12 +120,12 @@ export class FormUserReactiveComponent implements OnInit {
 
     if (this.id !== undefined) {
       this.userService.updateUser(this.id, this.fbUser.getRawValue()).subscribe({
-        next: () => this.router.navigate(['/user/listUsers']),
+        next: () => this.router.navigate(['/user']),
       })
     } else {
-      this.fbUser.getRawValue().picture = 'https://bootdey.com/img/Content/avatar/avatar3.png'
+      this.fbUser.getRawValue().picture = `https://bootdey.com/img/Content/avatar/avatar${Math.floor(Math.random() * (7 - 1 + 1) + 1)}.png`;
       this.userService.addUser(this.fbUser.getRawValue()).subscribe({
-        next: () => this.router.navigate(['/user/listUsers']),
+        next: () => this.router.navigate(['/user']),
       });
     }
   }

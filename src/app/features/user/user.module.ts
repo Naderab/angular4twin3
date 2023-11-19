@@ -10,7 +10,7 @@ import { FormUserComponent } from './form-user/form-user.component';
 import { FormUserReactiveComponent } from './form-user-reactive/form-user-reactive.component';
 
 @NgModule({
-  declarations: [UsersComponent, UserslistComponent, FormUserComponent, FormUserReactiveComponent],
+  declarations: [UserslistComponent, FormUserComponent, FormUserReactiveComponent],
   imports: [CommonModule, UserRoutingModule, FormsModule,ReactiveFormsModule],
 })
 export class UserModule {}
