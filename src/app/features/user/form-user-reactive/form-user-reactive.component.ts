@@ -130,8 +130,8 @@ export class FormUserReactiveComponent implements OnInit {
     }
   }
 
-  get firstName() {
-    return this.fbUser.controls['firstName'];
+  get firstName() :FormControl{
+    return this.fbUser.controls['firstName'] as FormControl;
   }
 
   get lastName() {

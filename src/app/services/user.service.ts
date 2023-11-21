@@ -3,6 +3,7 @@ import { User } from '../core/user';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.development';
+import { Account } from '../models/account';
 
 @Injectable({
   providedIn: 'root',
@@ -80,7 +81,7 @@ export class UserService {
   }
 
   fetchAllUsers() {
-    return this._http.get(this.apiUrl);
+    return this._http.get<User[]>(this.apiUrl);
   }
 
   fetchUserById(id: number) {
@@ -94,5 +95,14 @@ export class UserService {
   }
   deleteUser(id: number) {
     return this._http.delete(this.apiUrl + id);
+  }
+
+  getAllAccounts(){
+    return this._http.get<Account[]>(environment.BaseUrl+"accounts/")
+  }
+
+  deleteAccount(id:number){
+    return this._http.delete(environment.BaseUrl+"accounts/"+id
+    )
   }
 }

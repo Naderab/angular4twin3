@@ -29,7 +29,7 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">First Name</label>
         <input type="text" class="form-control" formControlName="firstName">
-        <div class="alert alert-danger" *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)">
+      <div class="alert alert-danger" *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)">
             <div *ngIf="firstName.errors!['required']"> FirstName is required !</div>
             <div *ngIf="firstName.errors!['minlength']"> FirstName must be at least 3 characters !</div>
         </div>

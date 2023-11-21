@@ -4,13 +4,15 @@ import { UsersComponent } from './users/users.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { FormUserComponent } from './form-user/form-user.component';
 import { FormUserReactiveComponent } from './form-user-reactive/form-user-reactive.component';
+import { ListAccountComponent } from './list-account/list-account.component';
 
 const routes: Routes = [
   { path: '', component: UserslistComponent },
   { path: 'add', component: FormUserComponent },
   { path: 'update/:id', component: FormUserComponent },
   { path: 'addReactive', component: FormUserReactiveComponent },
-  { path: 'updateReactive/:id', component: FormUserReactiveComponent }
+  { path: 'updateReactive/:id', component: FormUserReactiveComponent },
+  {path:'accounts',component:ListAccountComponent}
 
 
 ];

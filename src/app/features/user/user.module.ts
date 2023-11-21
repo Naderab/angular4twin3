@@ -8,9 +8,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormUserComponent } from './form-user/form-user.component';
 import { FormUserReactiveComponent } from './form-user-reactive/form-user-reactive.component';
+import { ListAccountComponent } from './list-account/list-account.component';
+import { AccountComponent } from './account/account.component';
+import { AddAccountComponent } from './add-account/add-account.component';
 
 @NgModule({
-  declarations: [UserslistComponent, FormUserComponent, FormUserReactiveComponent],
+  declarations: [UserslistComponent, FormUserComponent, FormUserReactiveComponent, ListAccountComponent, AccountComponent, AddAccountComponent],
   imports: [CommonModule, UserRoutingModule, FormsModule,ReactiveFormsModule],
 })
 export class UserModule {}

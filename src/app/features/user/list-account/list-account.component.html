@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6" *ngFor="let account of listAccounts">
+            <app-account [p]="prop" [a]="account" (d)="deleteA($event)" (testO)="testEventParent($event)" (showEvent)="show($event)"></app-account>
+            </div>
+            <!--<button (click)="changeProp()">Change Me</button>-->
+    </div>
+    <div class="row" [hidden]="hide">
+        <app-userslist [selectedAccount]="selectedAccount"></app-userslist>
+    </div>
+    <div class="row">
+        <app-add-account></app-add-account>
+    </div>
+</div>

@@ -16,7 +16,7 @@ import { UsersComponent } from './features/user/users/users.component';
     NavbarComponent,
     HeaderComponent,
     NotfoundComponent,
-    UsersComponent
+    UsersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

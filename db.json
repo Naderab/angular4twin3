@@ -22,5 +22,23 @@
       "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
       "id": 2
     }
-  ]
+  ],
+  "accounts":[{
+    "id":1,
+    "title":"Admin",
+    "image":"https://bootdey.com/img/Content/avatar/avatar1.png",
+    "description":"admin account"
+  },
+  {
+    "id":2,
+    "title":"Customer",
+    "image":"https://bootdey.com/img/Content/avatar/avatar2.png",
+    "description":"Customer account"
+  },
+  {
+    "id":3,
+    "title":"Provider",
+    "image":"https://bootdey.com/img/Content/avatar/avatar3.png",
+    "description":"Provider account"
+  }]
 }

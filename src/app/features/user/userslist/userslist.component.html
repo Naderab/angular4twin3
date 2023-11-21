@@ -22,7 +22,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let user of listusers">
+              <tr *ngFor="let user of listFiltred">
                 <td>
                   <img [src]="user.picture" alt="">
                   <a href="#" class="user-link">{{user.firstName}} {{user.lastName}}</a>
