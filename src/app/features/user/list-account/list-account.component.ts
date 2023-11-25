@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Account } from 'src/app/models/account';
 import { UserService } from 'src/app/services/user.service';
 import { AddAccountComponent } from '../add-account/add-account.component';
@@ -8,9 +8,9 @@ import { AddAccountComponent } from '../add-account/add-account.component';
   templateUrl: './list-account.component.html',
   styleUrls: ['./list-account.component.css']
 })
-export class ListAccountComponent implements OnInit {
-  @ViewChild('<app-add-account></app-add-account>') 
-  addAccount !: AddAccountComponent;
+export class ListAccountComponent implements OnInit,AfterViewInit {
+  @ViewChild(AddAccountComponent) 
+  private addAccount !: AddAccountComponent;
 
   listAccounts : Account[] = [];
   prop:number=0;
@@ -18,6 +18,9 @@ export class ListAccountComponent implements OnInit {
   selectedAccount !: Account;
 
     constructor(private _userService:UserService){}
+  ngAfterViewInit(): void {
+    console.log(this.addAccount.values)
+  }
   ngOnInit(): void {
     this._userService.getAllAccounts().subscribe({
       next : (data) => this.listAccounts = data
@@ -41,7 +44,7 @@ export class ListAccountComponent implements OnInit {
   show(a:Account){
     console.log(a)
       this.selectedAccount = a;
-    this.hide=false;
+    this.hide=!this.hide;
 
   }
 }
